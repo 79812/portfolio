@@ -4,12 +4,12 @@
 <head>
 
   <meta charset="UTF-8">
-  <title>Twitter Bootstrap!</title>
+  <title>Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/pushy.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="shortcut icon" href="images/portfolio.ico" />
+  <link rel="shortcut icon" href="images/portfolio.ico"/>
 
 </head>
 
@@ -21,7 +21,7 @@
 <nav class="pushy pushy-left">
   <div class="pushy-content">
     <ul>
-      <li class="pushy-link"><a href="aboutpage.html">About</a></li>
+      <li class="pushy-link"><a href="aboutpage.php">About</a></li>
       <li class="pushy-link"><a href="#">Contact</a></li>
       <li class="pushy-link"><a href="#">Projects</a></li>
     </ul>
@@ -49,7 +49,7 @@
             <h4>About me!</h4>
             <p class="lead">Info about me</p>
             <p>My name is André Arguello and im a web developer who likes to develop websites. I'm from Spain. </br> Hello </br></br></p>
-            <a href="aboutpage.html" class="btn btn-dark">About me</a>
+            <a href="aboutpage.php" class="btn btn-dark">About me</a>
           </div>
         </div>
       </div>      
@@ -77,7 +77,7 @@
       </div>
     </div>
   </div>
-  
+
   <script type="text/javascript" src="js/particle.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>

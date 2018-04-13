@@ -4,12 +4,23 @@
 <head>
 
   <meta charset="UTF-8">
-  <title>Twitter Bootstrap!</title>
+  <title>Projects</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/pushy.css">
-  <link rel="stylesheet" type="text/css" href="css/style-about.css">
-  <link rel="shortcut icon" href="images/portfolio.ico" />
+  <link rel="stylesheet" type="text/css" href="css/style-projects.css">
+  <link rel="shortcut icon" href="images/portfolio.ico"/>
+
+<?php
+  include("inc/databaseconn.php")
+?>
+
+<?php 
+$selectSQL = "SELECT projectTitle, projectDescription, projectImage, projectCategory FROM projects ";
+
+$result = $conn->query($selectSQL);
+?>
+
 
 </head>
 
@@ -21,7 +32,7 @@
 <nav class="pushy pushy-left">
   <div class="pushy-content">
     <ul>
-      <li class="pushy-link"><a href="index.html">Homepage</a></li>
+      <li class="pushy-link"><a href="index.php">Homepage</a></li>
       <li class="pushy-link"><a href="#">Contact</a></li>
       <li class="pushy-link"><a href="#">Projects</a></li>
     </ul>
@@ -31,7 +42,7 @@
 <!-- Site Overlay -->
 <div class="site-overlay"></div>
 
- <div class="jumbotron bg-danger">
+  <div class="jumbotron bg-danger">
     <div class="container">
       <h1 class="display-4"> </h1>
       <p class="lead"> </p>      
@@ -46,8 +57,34 @@
       <div class="col-md-12 mt-6">
         <div class="card bg-secondary">
           <div class="card-body">
-            <h4>Info about me</h4>
-            <p class="lead">My name is André Arguello and im a web developer who likes to develop websites. I'm from Spain. </br> Hello</p>
+            <h4>These are my projects</h4>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Title</th>
+                    <th>Desc</th>
+                    <th>Img</th>
+                    <th>Category</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <?php
+                  foreach($result as $k => $v)
+                  {
+                    ?>
+                      <tr>
+                        <td><?php echo $v['projectTitle']; ?></td>
+                        <td><?php echo $v['projectDescription']; ?></td>
+                        <td><?php echo $v['projectImage']; ?></td>
+                        <td><?php echo $v['projectCategory']; ?></td>
+                      </tr>
+                    <?php
+                  }
+                  ?>
+                </tbody>
+              </table>
+              <p class="lead"></br></p>
           </div>
         </div>
       </div>
