@@ -21,6 +21,9 @@
   text-decoration: none;
   font-size: 17px;
 }
+.pushy-content ul {
+  list-style: none;
+}
 .pushy a:hover {
   color: #FFF;
 }
@@ -131,7 +134,7 @@
     font-weight: bold;
     font-size: 35px;
     margin-left: 7px;
-    margin-top: 1px;
+    margin-top: 2px;
 }
 /* Submenu Appearance */
 .pushy-submenu {
