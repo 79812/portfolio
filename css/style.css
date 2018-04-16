@@ -53,8 +53,21 @@ border-radius: 0 0 3px 3px;
 .jumbotron {
 margin-bottom: 0px;
 border-radius: 0px;
+height: 220px;
 }
 .container{
-	height: 80px;
-	margin-top: -8px;
+height: 80px;
+margin-top: -8px;
+}
+.language{
+float: right;
+position: absolute;
+right: 10px;
+top: 10px;
+}
+.language{
+float: right;
+position: absolute;
+right: 10px;
+top: 10px;
 }

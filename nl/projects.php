@@ -1,15 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="nl" >
 
 <head>
 
   <meta charset="UTF-8">
-  <title>About</title>
+  <title>Projecten</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/pushy.css">
-  <link rel="stylesheet" type="text/css" href="css/style-about.css">
+  <link rel="stylesheet" type="text/css" href="css/style-projects.css">
   <link rel="shortcut icon" href="images/portfolio.ico"/>
+
+<?php
+  include("inc/databaseconn.php")
+?>
+
+<?php
+  include("inc/projects.php")
+?>
 
 </head>
 
@@ -21,9 +29,9 @@
 <nav class="pushy pushy-left">
   <div class="pushy-content">
     <ul>
-      <li class="pushy-link"><a href="index.php">Homepage</a></li>
+      <li class="pushy-link"><a href="index.php">Homepagina</a></li>
       <li class="pushy-link"><a href="contact.php">Contact</a></li>
-      <li class="pushy-link"><a href="projects.php">Projects</a></li>
+      <li class="pushy-link"><a href="aboutpage.php">Over mij</a></li>
     </ul>
   </div>
 </nav>
@@ -34,7 +42,7 @@
   <div class="jumbotron bg-danger">
     <div class="container">
       <h1 class="display-4"> </h1>
-      <a href="/portfolio/nl/aboutpage.php" class="language btn btn-dark">NL</a>
+      <a href="/portfolio/projects.php" class="language btn btn-dark">EN</a>
       <p class="lead"> </p>      
     </div>
   </div>
@@ -47,19 +55,23 @@
       <div class="col-md-12 mt-6">
         <div class="card bg-secondary">
           <div class="card-body">
-            <h4>Info about me</h4>
-            <p class="lead">My name is André Arguello and im a web developer who likes to develop websites. I'm from Spain. </br> Hello</p>
-            <a class="btn btn-dark" href="files/" download="cv.pdf">Download CV</a>
+            <h4>Dit zijn mijn projecten</h4>
+
+              <?php
+              include("inc/fetchProjects.php")
+              ?>              
+              
+              <p class="lead"></br></p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
+
 </body>
 
   <?php
     include("inc/script.php")
   ?>
 
-</html>    
+</html>           

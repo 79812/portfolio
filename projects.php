@@ -15,12 +15,9 @@
   include("inc/databaseconn.php")
 ?>
 
-<?php 
-$selectSQL = "SELECT projectTitle, projectDescription, projectImage, projectCategory FROM projects ";
-
-$result = $conn->query($selectSQL);
+<?php
+  include("inc/projects.php")
 ?>
-
 
 </head>
 
@@ -33,8 +30,8 @@ $result = $conn->query($selectSQL);
   <div class="pushy-content">
     <ul>
       <li class="pushy-link"><a href="index.php">Homepage</a></li>
-      <li class="pushy-link"><a href="#">Contact</a></li>
-      <li class="pushy-link"><a href="#">Projects</a></li>
+      <li class="pushy-link"><a href="contact.php">Contact</a></li>
+      <li class="pushy-link"><a href="projects.php">Projects</a></li>
     </ul>
   </div>
 </nav>
@@ -45,6 +42,7 @@ $result = $conn->query($selectSQL);
   <div class="jumbotron bg-danger">
     <div class="container">
       <h1 class="display-4"> </h1>
+      <a href="/portfolio/nl/projects.php" class="language btn btn-dark">NL</a>
       <p class="lead"> </p>      
     </div>
   </div>
@@ -58,32 +56,11 @@ $result = $conn->query($selectSQL);
         <div class="card bg-secondary">
           <div class="card-body">
             <h4>These are my projects</h4>
-              <table>
-                <thead>
-                  <tr>
-                    <th>Title</th>
-                    <th>Desc</th>
-                    <th>Img</th>
-                    <th>Category</th>
-                  </tr>
-                </thead>
 
-                <tbody>
-                  <?php
-                  foreach($result as $k => $v)
-                  {
-                    ?>
-                      <tr>
-                        <td><?php echo $v['projectTitle']; ?></td>
-                        <td><?php echo $v['projectDescription']; ?></td>
-                        <td><?php echo $v['projectImage']; ?></td>
-                        <td><?php echo $v['projectCategory']; ?></td>
-                      </tr>
-                    <?php
-                  }
-                  ?>
-                </tbody>
-              </table>
+              <?php
+              include("inc/fetchProjects.php")
+              ?>
+
               <p class="lead"></br></p>
           </div>
         </div>
@@ -91,16 +68,10 @@ $result = $conn->query($selectSQL);
     </div>
   </div>
 
-  <script type="text/javascript" src="js/particle.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
-  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <!-- stats.js lib -->
-  <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
-  <script src="js/index.js"></script>
-  <script src="js/pushy.min.js"></script>
-
 </body>
-</html>
+
+  <?php
+    include("inc/script.php")
+  ?>
+
+</html>           

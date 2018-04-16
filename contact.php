@@ -4,7 +4,7 @@
 <head>
 
   <meta charset="UTF-8">
-  <title>About</title>
+  <title>Contact</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/pushy.css">
@@ -22,7 +22,7 @@
   <div class="pushy-content">
     <ul>
       <li class="pushy-link"><a href="index.php">Homepage</a></li>
-      <li class="pushy-link"><a href="contact.php">Contact</a></li>
+      <li class="pushy-link"><a href="aboutpage.php">About</a></li>
       <li class="pushy-link"><a href="projects.php">Projects</a></li>
     </ul>
   </div>
@@ -34,7 +34,7 @@
   <div class="jumbotron bg-danger">
     <div class="container">
       <h1 class="display-4"> </h1>
-      <a href="/portfolio/nl/aboutpage.php" class="language btn btn-dark">NL</a>
+      <a href="/portfolio/nl/contact.php" class="language btn btn-dark">NL</a>
       <p class="lead"> </p>      
     </div>
   </div>
@@ -47,19 +47,24 @@
       <div class="col-md-12 mt-6">
         <div class="card bg-secondary">
           <div class="card-body">
-            <h4>Info about me</h4>
-            <p class="lead">My name is André Arguello and im a web developer who likes to develop websites. I'm from Spain. </br> Hello</p>
-            <a class="btn btn-dark" href="files/" download="cv.pdf">Download CV</a>
+            <h3><b>Contact:</b></h3></br>
+            <p class="lead font-weight-bold">Name:<p><p class="lead">André Arguello</p>
+            <p class="lead font-weight-bold">Phone Number:<p><p class="lead"> 0629384239</p>
+            <p class="lead font-weight-bold">Email:<p><p class="lead">andrearguello@fakemail.com</p>
+            <p class="lead font-weight-bold">Adress:<p><p class="lead"> Deltaweg 205, 5709 AB Helmond</p></br>
+            <a href="contact-form.php" class="btn btn-dark">Contact form</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
+
+<footer class="footer"> Andre 2018 </footer>
+
 </body>
 
   <?php
     include("inc/script.php")
   ?>
 
-</html>    
+</html>

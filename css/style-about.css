@@ -53,6 +53,7 @@ border-radius: 0 0 3px 3px;
 .jumbotron {
 margin-bottom: 0px;
 border-radius: 0px;
+height: 210px;
 }
 .container{
 height: 80px;
@@ -61,6 +62,35 @@ margin-top: -8px;
 .bg-secondary{
 margin-top: 25px;
 }
-.jumbotron {
-height: 200px;
+.language{
+float: right;
+position: absolute;
+right: 10px;
+top: 10px;
+}
+textarea{
+resize: both;
+max-width: 1070px; 
+max-height: 100px;
+min-width: 141px;
+min-height: 34px;
+}
+.footer{
+background-color: #1C1C1C;
+height: 35px;
+width: 920px;
+color: white;
+font-size: 19px;
+float: left;
+font-family: Impact;
+position: absolute;
+bottom: 0px;
+clear:both;
+left: 50%;
+bottom: 0px;
+margin-right: -50%;
+transform: translate(-50%);
+text-align: center;
+margin-top: 100px;
+z-index: 1;
 }

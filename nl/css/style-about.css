@@ -62,13 +62,16 @@ margin-top: -8px;
 .bg-secondary{
 margin-top: 25px;
 }
-table{
-text-align: center;
-margin-left: 10px;
-}
 .language{
 float: right;
 position: absolute;
 right: 10px;
 top: 10px;
+}
+textarea{
+resize: both;
+max-width: 1070px; 
+max-height: 100px;
+min-width: 141px;
+min-height: 34px;
 }

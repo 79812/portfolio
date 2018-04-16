@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="nl" >
 
 <head>
 
@@ -21,9 +21,9 @@
 <nav class="pushy pushy-left">
   <div class="pushy-content">
     <ul>
-      <li class="pushy-link"><a href="index.php">Homepage</a></li>
+      <li class="pushy-link"><a href="index.php">Homepagina</a></li>
       <li class="pushy-link"><a href="contact.php">Contact</a></li>
-      <li class="pushy-link"><a href="projects.php">Projects</a></li>
+      <li class="pushy-link"><a href="projects.php">Projecten</a></li>
     </ul>
   </div>
 </nav>
@@ -34,7 +34,7 @@
   <div class="jumbotron bg-danger">
     <div class="container">
       <h1 class="display-4"> </h1>
-      <a href="/portfolio/nl/aboutpage.php" class="language btn btn-dark">NL</a>
+      <a href="/portfolio/aboutpage.php" class="language btn btn-dark">EN</a>
       <p class="lead"> </p>      
     </div>
   </div>
@@ -47,8 +47,8 @@
       <div class="col-md-12 mt-6">
         <div class="card bg-secondary">
           <div class="card-body">
-            <h4>Info about me</h4>
-            <p class="lead">My name is André Arguello and im a web developer who likes to develop websites. I'm from Spain. </br> Hello</p>
+            <h4>Informatie over mij</h4>
+            <p class="lead">Ik heet André Arguello en ik ben een web developer. Ik kom uit Spanje. </br> Hello</p>
             <a class="btn btn-dark" href="files/" download="cv.pdf">Download CV</a>
           </div>
         </div>
