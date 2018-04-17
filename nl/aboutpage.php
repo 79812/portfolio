@@ -48,7 +48,12 @@
         <div class="card bg-secondary">
           <div class="card-body">
             <h4>Informatie over mij</h4>
-            <p class="lead">Ik heet André Arguello en ik ben een web developer. Ik kom uit Spanje. </br> Hello</p>
+            <p class="lead">Ik heet André Arguello en ik ben een web developer. Ik kom uit Murcia, Spanje. </br> Mijn skills: Ik ben goed in PHP en CSS. </br>
+            Mijn punten zijn niet erg goed op dit moment maar dat gaat veranderen want ik ga mijn best doen op school.</br> Ik heb een VMBO-T diploma en ik ben tweetalig (Spaans en Nederlands).
+            </br></br>
+            Dit is mijn Spotify playlist:</br></br>
+            <iframe src="https://open.spotify.com/embed?uri=spotify:user:vlad_ducky:playlist:4V77z0XdBK9wJ9H8ZzyUmb" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe><div class="slide-image"><img class="image-size" name="slide"></br></div>
+            </p>
             <a class="btn btn-dark" href="files/" download="cv.pdf">Download CV</a>
           </div>
         </div>
@@ -61,5 +66,8 @@
   <?php
     include("inc/script.php")
   ?>
-
+  <?php
+    include("inc/footer.php")
+  ?>
+  
 </html>    

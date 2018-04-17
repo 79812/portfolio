@@ -1,3 +1,4 @@
+//particles background
 particlesJS("particles-js", {
     "particles": {
         "number": {
@@ -108,3 +109,32 @@ particlesJS("particles-js", {
     },
     "retina_detect": false
 });;
+//slideshow
+var i = 0,        // Start Point
+    images = [],  // Images Array
+    time = 3000;  // Time Between Switch
+   
+// Image List
+images[0] = "images/slide1.jpg";
+images[1] = "images/slide2.jpg";
+images[2] = "images/slide3.jpg";
+
+// Change Image
+function changeImg(){
+  document.slide.src = images[i];
+
+  // Check If Index Is Under Max
+  if(i < images.length - 1){
+    // Add 1 to Index
+    i++; 
+  } else { 
+    // Reset Back To O
+    i = 0;
+  }
+
+  // Run function every x seconds
+  setTimeout("changeImg()", time);
+}
+
+// Run function when page loads
+window.onload=changeImg;

@@ -84,5 +84,8 @@
   <?php
     include("inc/script.php")
   ?>
-
+  <?php
+    include("inc/footer.php")
+  ?>
+  
 </html>    

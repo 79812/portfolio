@@ -48,7 +48,11 @@
         <div class="card bg-secondary">
           <div class="card-body">
             <h4>Info about me</h4>
-            <p class="lead">My name is André Arguello and im a web developer who likes to develop websites. I'm from Spain. </br> Hello</p>
+            <p class="lead">My name is André Arguello and im a web developer who likes to develop websites. I'm from Murcia, Spain. </br> My skills: Im good with PHP and CSS. </br> My grades are not the best at the moment but they will get better soon. </br> I have a VMBO-T certificate (Lower Vocational Education) and Im bilingual (Spanish and Dutch).
+            </br></br>
+            This is my Spotify playlist:</br></br>
+            <iframe src="https://open.spotify.com/embed?uri=spotify:user:vlad_ducky:playlist:4V77z0XdBK9wJ9H8ZzyUmb" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe><div class="slide-image"><img class="image-size" name="slide"></br></div>
+            </p>
             <a class="btn btn-dark" href="files/" download="cv.pdf">Download CV</a>
           </div>
         </div>
@@ -61,5 +65,8 @@
   <?php
     include("inc/script.php")
   ?>
-
+  <?php
+    include("inc/footer.php")
+  ?>
+  
 </html>    

@@ -51,16 +51,16 @@
   <div id="particles-js"></div>
 
   <div class="container">
-    <div class="row">
+    <div class="ctnr-projects row">
       <div class="col-md-12 mt-6">
         <div class="card bg-secondary">
-          <div class="card-body">
+          <div class="ctnr-height card-body">
             <h4>Dit zijn mijn projecten</h4>
 
               <?php
               include("inc/fetchProjects.php")
-              ?>              
-              
+              ?>
+        
               <p class="lead"></br></p>
           </div>
         </div>
@@ -70,8 +70,12 @@
 
 </body>
 
+
   <?php
     include("inc/script.php")
   ?>
-
+  <?php
+    include("inc/footer.php")
+  ?>
+  
 </html>           

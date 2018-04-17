@@ -11,7 +11,7 @@ vertical-align: bottom;
 #particles-js{
 position:absolute;
 width: 100%;
-height: 100%;
+height: 170%;
 background-color: #585858;
 background-image: url("");
 background-repeat: no-repeat;
@@ -25,8 +25,7 @@ position: absolute;
 top: 48px;
 left: 0;
 width: 80px;
-color:
-#13E8E9;
+color: #13E8E9;
 font-size: .8em;
 text-align: left;
 text-indent: 4px;
@@ -53,7 +52,7 @@ border-radius: 0 0 3px 3px;
 .jumbotron {
 margin-bottom: 0px;
 border-radius: 0px;
-height: 210px;
+height: 220px;
 }
 .container{
 height: 80px;
@@ -71,4 +70,42 @@ float: right;
 position: absolute;
 right: 10px;
 top: 10px;
+}
+.projectTitle, .projectDescription, .projectImage, .projectLanguage{
+color: #1c1c1c;
+position: relative;
+font-weight: bold;
+}
+.projectTitleTable, .projectDescriptionTable, .projectLanguageTable{
+position: relative;
+}
+.project-image{
+position: relative;
+width: 100%;
+height: auto;
+}
+table, th, td {
+border: 1px solid black;
+}
+table{
+width:100%;
+}
+.foot-er{
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: #343a40;
+color: white;
+text-align: center;
+}
+/* ---- mobile ---- */
+@media screen and (min-width:360px) and (max-width: 480px){
+body{
+overflow-y: scroll;
+margin:0;
+font:normal 75% Arial, Helvetica, sans-serif;
+}
+#particles-js{
+height: 90%;
 }

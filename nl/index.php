@@ -33,7 +33,7 @@
 
   <div class="jumbotron bg-danger">
     <div class="container">
-      <h1 class="display-4">Welkom!</h1>
+      <h1 class="display-4">&nbspWelkom!</h1>
       <p class="lead"> Welkom naar mijn portfolio waar je informatie kan vinden over mij, mijn projecten en mijn contactgegevens.</p>
       <a href="/portfolio/index.php" class="language btn btn-dark">EN</a>
     </div>
@@ -84,5 +84,8 @@
   <?php
     include("inc/script.php")
   ?>
-
+  <?php
+    include("inc/footer.php")
+  ?>
+  
 </html>    

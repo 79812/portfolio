@@ -8,12 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/pushy.css">
-  <link rel="stylesheet" type="text/css" href="css/style-about.css">
+  <link rel="stylesheet" type="text/css" href="css/style-form.css">
   <link rel="shortcut icon" href="images/portfolio.ico"/>
-
-<?php
-  include("inc/databaseconn.php")
-?>
 
 <?php
   include("inc/form.php")
@@ -37,6 +33,7 @@
   </div>
 </nav>
 
+<form action="contact-form.php" method="POST">
 <!-- Site Overlay -->
 <div class="site-overlay"></div>
 
@@ -91,7 +88,6 @@
               ?>
               
             </fieldset>
-            <form action="contact-form.php" method="POST">
           </div>
         </div>
       </div>
@@ -103,5 +99,8 @@
   <?php
     include("inc/script.php")
   ?>
-
+ <?php
+    include("inc/footer.php")
+  ?>
+  
 </html>    

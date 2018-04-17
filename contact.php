@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/pushy.css">
-  <link rel="stylesheet" type="text/css" href="css/style-about.css">
+  <link rel="stylesheet" type="text/css" href="css/style-contact.css">
   <link rel="shortcut icon" href="images/portfolio.ico"/>
 
 </head>
@@ -59,12 +59,13 @@
     </div>
   </div>
 
-<footer class="footer"> Andre 2018 </footer>
-
 </body>
 
   <?php
     include("inc/script.php")
+  ?>
+ <?php
+    include("inc/footer.php")
   ?>
 
 </html>

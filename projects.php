@@ -10,7 +10,7 @@
   <link rel="stylesheet" type="text/css" href="css/pushy.css">
   <link rel="stylesheet" type="text/css" href="css/style-projects.css">
   <link rel="shortcut icon" href="images/portfolio.ico"/>
-
+  
 <?php
   include("inc/databaseconn.php")
 ?>
@@ -31,7 +31,7 @@
     <ul>
       <li class="pushy-link"><a href="index.php">Homepage</a></li>
       <li class="pushy-link"><a href="contact.php">Contact</a></li>
-      <li class="pushy-link"><a href="projects.php">Projects</a></li>
+      <li class="pushy-link"><a href="aboutpage.php">About</a></li>
     </ul>
   </div>
 </nav>
@@ -61,7 +61,7 @@
               include("inc/fetchProjects.php")
               ?>
 
-              <p class="lead"></br></p>
+            <p class="lead"></br></p>
           </div>
         </div>
       </div>
@@ -72,6 +72,9 @@
 
   <?php
     include("inc/script.php")
+  ?>
+ <?php
+    include("inc/footer.php")
   ?>
 
 </html>           

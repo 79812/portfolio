@@ -6,7 +6,7 @@ catch(PDOException $e){
   echo $e->getMessage();
 }
 
-$selectSQL = "SELECT projectTitle, projectDescription, projectImage, projectCategory FROM projects";
+$selectSQL = "SELECT projectTitle, projectDescription, projectImage, projectLanguage FROM projects";
 
 $result = $conn->query($selectSQL);
 $sqlImage = "SELECT projectImage FROM projects";
