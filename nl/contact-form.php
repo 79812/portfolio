@@ -4,7 +4,7 @@
 <head>
 
   <meta charset="UTF-8">
-  <title>Contact form</title>
+  <title>Contact formulier</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/pushy.css">

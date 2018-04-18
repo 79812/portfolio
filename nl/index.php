@@ -49,7 +49,7 @@
           <div class="card-body">
             <h4>Over mij!</h4>
             <p class="lead">Informatie over mij</p>
-            <p>Ik ben André Arguello en ik ben een web developer dat houdt van websites. Ik kom uit Spanje. </br> Hello </br></br></p>
+            <p>Ik ben André Arguello en ik ben een web developer dat houdt van websites. Ik kom uit Spanje. </br></br></br></p>
             <a href="aboutpage.php" class="btn btn-dark">Over mij</a>
           </div>
         </div>

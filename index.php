@@ -49,7 +49,7 @@
           <div class="card-body">
             <h4>About me!</h4>
             <p class="lead">Info about me</p>
-            <p>My name is André Arguello and im a web developer who likes to develop websites. I'm from Spain. </br> Hello </br></br></p>
+            <p>My name is André Arguello and im a web developer who likes to develop websites. I'm from Spain. </br></br></br></p>
             <a href="aboutpage.php" class="btn btn-dark">About me</a>
           </div>
         </div>
